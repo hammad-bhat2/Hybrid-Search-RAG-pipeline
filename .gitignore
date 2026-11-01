@@ -1,0 +1,36 @@
+# --- Environment & Secrets ---
+.env
+.env.local
+*.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.ruff_cache/
+
+# --- Node.js & Frontend ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+.npm
+
+# --- Local Data & Vector DB Storage ---
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+qdrant_storage/
+data/qdrant_db/
+*.sqlite3
+*.db
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+.vscode/
